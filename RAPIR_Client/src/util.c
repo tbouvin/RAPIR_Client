@@ -32,6 +32,8 @@ void parseStdOut(char* str) {
 		str[i] = c;
 	}
 	str[i] = '\0';
+
+//	printf("Typed Command: %s\n", str);
 }
 
 int sendCommand(char* command) {
