@@ -11,17 +11,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <sys/types.h>
-#include <sys/socket.h>
-#include <netinet/in.h>
+#include "util.h"
+
+
+
+
 
 int main(void) {
-	int sock;
-	if(sock = socket(AF_INET, SOCK_STREAM, 0) < 0)
-	  {
-	    perror("Socket Failed");
-	    exit(1);
-	  }
+	if(connectToServer() < 0)
+		exit(1);
 
-
+	return 0;
 }

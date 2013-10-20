@@ -4,13 +4,16 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../src/RAPIR_Client.c 
+../src/RAPIR_Client.c \
+../src/util.c 
 
 OBJS += \
-./src/RAPIR_Client.o 
+./src/RAPIR_Client.o \
+./src/util.o 
 
 C_DEPS += \
-./src/RAPIR_Client.d 
+./src/RAPIR_Client.d \
+./src/util.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
